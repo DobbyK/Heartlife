@@ -1,5 +1,8 @@
-import text
-import sys
+import functions
+import config
+config.init()
 
+functions.cutscenes.openingmenu()
 
-text.cutscenes.openingmenu()
+if config.newbie == True:
+	functions.cutscenes.newbie_adventure()

@@ -1,6 +1,9 @@
 	# import config
 from colorama import Fore, Back, Style
 import time
+import saving
+import config
+config.init()
 
 class cutscenes:
 	def openingmenu():
@@ -13,22 +16,27 @@ class cutscenes:
 ╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚══════╝╚═╝╚═╝░░░░░╚══════╝
 ____________________________________________________________________
 		''')
-		print(Fore.RED + 'Is this your first time playing? (y/n)')
+		print('Is this your first time playing? (y/n)')
 		x = input(Fore.WHITE + '>> ')
 		if x == 'y':
+			config.newbie = True
 			print(Fore.WHITE + 'Ahh! Then we should explain the game to you!')
 			cutscenes.explain()
 			cutscenes.newgame()
+			return
 		if x == 'n':
 			print(Fore.WHITE + 'Very Nice, thanks for playing again, do you want to start a new game? (y/n)')
 			x = input(Fore.WHITE + '>> ')
 			if x == 'y':
 				cutscenes.newgame()
+				return
 			if x == 'n':
 				print('Copy and paste your save data bellow:')
 				x = input('>> ')
+				saving.load()
 
-# Explain The Game's Goal
+
+# Explain The Game
 	def explain():
 		print('This game is about anything you want, You can be a Scientist, An Astronaut, (Well Maybe Not). But you get the point!')
 		print('The point of the this game is to make a fantasy world that feels real, using text, and graphics.')
@@ -56,23 +64,42 @@ ____________________________________________________________________
 			global gamemode
 			choice = int(choice)
 			if choice >= 1 and choice <= 6:
-				gamemode = choice
+				config.gamemode = choice
 				gamemodechoice = True
 			else:
 				print("Must be an Integer 1 to 6")
 
 		print("What's your name?")
-		name = input('>> ')
+		config.name = input('>> ')
 		goalchoice = None
 		
 		while not goalchoice:
 			print("What's your goal in life? Riches (1), Strength (2), Famousness (3), Power (4) as in goverment, All of them (5), or something else (6)")
 			choice = input('>> ')
 			try:
-				global goal
-				goal = int(choice)
-				if goal >= 1 and goal <= 6: 
+				config.goal = int(choice)
+				if config.goal >= 1 and config.goal <= 6: 
 					goalchoice = True
 			except:
 				print("Must be an Integer 1 to 6")
-		print('Is this good? Name:', name, '  Gamemode:', gamemode, '  Goal:', goal)
+		print('Is this good? Name:', config.name, '  Gamemode:', config.gamemode, '  Goal:', config.goal)
+	def newbie_adventure():
+		print('Welcome to Heartlook,', config.name ,'! This is a massive world!')
+		time.sleep(2)
+		print('Who am I? Oh! My Name is...')
+		time.sleep(1.5)
+		print("I wouldn't tell you that! Anyways you might want a map!")
+		time.sleep(1.5)
+		print('Hahaha You will not get one! Ahahaha.')
+		time.sleep(4)
+		print('But On a Serious Note, I do not have one')
+		time.sleep(1.5)
+		print('Do I look like a Cartographer? No.')
+		time.sleep(1.5)
+		print('You picked easy mode, right? I mean that does not matter for this adventure.')
+		time.sleep(1)
+		print('Okay Bye...')
+		print(Back.GREEN + 'Type: Map!' + Style.RESET_ALL)
+		cd = input('>> ')
+		print(Style.RESET_ALL + "Oh Wait You can't")
+		print(cd + " Didn't work")

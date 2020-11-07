@@ -16,3 +16,5 @@ Version 0.01.2 Alpha - "Explaination Things" - Late Morning 7-11-2020 - Introduc
 Version 0.01.3 Alpha - "New Game!" - Early Afternoon 7-11-2020 - Made New Game Scene, Major Bug: Doesn't test choices in new game besides if it a interger. Map still hasn't change IRL. 
 
 Version 0.01.3.1 Alpha Bug Fix - Choices are fully tested, as long as it is a interger!
+
+Version 0.01.4 Alpha - "Newbie Adventure" - Afternoon 7-11-2020 - Fixed Formating Errors, Started A Newbie Adventure before actual game starts when it's your first time playing.
