@@ -28,7 +28,7 @@ ____________________________________________________________________
 				print('Copy and paste your save data bellow:')
 				x = input('>> ')
 
-# Explain The Games Goal
+# Explain The Game's Goal
 	def explain():
 		print('This game is about anything you want, You can be a Scientist, An Astronaut, (Well Maybe Not). But you get the point!')
 		print('The point of the this game is to make a fantasy world that feels real, using text, and graphics.')
@@ -53,22 +53,26 @@ ____________________________________________________________________
 		while not gamemodechoice:
 			print(Style.RESET_ALL + 'What difficulity do you want? Easy (1), Medium (2), Hard (3), Realistic (4), Deadly (5), Psychically Immpossible (6)')		
 			choice = input('>> ')
-			try:
-				global gamemode
-				gamemodechoice = int(choice)
-				gamemode = gamemodechoice
-			except ValueError:
-				print("Must be an integer 1 to 6")
+			global gamemode
+			choice = int(choice)
+			if choice >= 1 and choice <= 6:
+				gamemode = choice
+				gamemodechoice = True
+			else:
+				print("Must be an Integer 1 to 6")
+
 		print("What's your name?")
 		name = input('>> ')
 		goalchoice = None
+		
 		while not goalchoice:
 			print("What's your goal in life? Riches (1), Strength (2), Famousness (3), Power (4) as in goverment, All of them (5), or something else (6)")
 			choice = input('>> ')
 			try:
 				global goal
 				goal = int(choice)
-				goalchoice = goal
-			except ValueError:
-				print("Must be an integer 1 to 6")
+				if goal >= 1 and goal <= 6: 
+					goalchoice = True
+			except:
+				print("Must be an Integer 1 to 6")
 		print('Is this good? Name:', name, '  Gamemode:', gamemode, '  Goal:', goal)
