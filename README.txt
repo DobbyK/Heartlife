@@ -1,0 +1,1 @@
+Version 0.01 Beta - "Hopeful Start" - Most of My Projects never finished. - Tested Colorama, Added Readme file, config, just basic set up. Working on drawing map IRL.
