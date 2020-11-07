@@ -20,3 +20,5 @@ Version 0.01.3.1 Alpha Bug Fix - Choices are fully tested, as long as it is a in
 Version 0.01.4 Alpha - "Newbie Adventure" - Afternoon 7-11-2020 - Fixed Formating Errors, Started A Newbie Adventure before actual game starts when it's your first time playing. Will work on map soon.
 
 Version 0.01.4.1 Alpha Map Testing
+
+Version 0.01.5 Alpha - "Command Line" - Late Afternoon 7-11-2020 - Fixed More Formating Errors, Made a Test Map, Added Ability to do Commands (At least When I add them) Final Update of the Day. Working on Map Tonight.

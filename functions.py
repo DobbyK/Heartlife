@@ -4,6 +4,7 @@ import time
 import saving
 import config
 import maps
+import cdline
 config.init()
 
 class cutscenes:
@@ -108,5 +109,7 @@ ____________________________________________________________________
 
 class spawn:
 	def newgame():
-		print('This is the map of the current area.')
+		config.locatation = 'Heart Central'
+		print('This is the map of the current area:', + config.locatation)
 		maps.heartcentral()
+		

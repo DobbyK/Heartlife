@@ -1,4 +1,5 @@
 def init():
+	global cd 
 	global newbie
 	global name 
 	global gamemode
@@ -9,3 +10,7 @@ def init():
 	gamemode = None
 	goal = None
 	locatation = None
+	cd = None
+def settings():
+	global mirror
+	mirror = True
