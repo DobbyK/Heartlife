@@ -3,6 +3,7 @@ from colorama import Fore, Back, Style
 import time
 import saving
 import config
+import maps
 config.init()
 
 class cutscenes:
@@ -103,3 +104,8 @@ ____________________________________________________________________
 		cd = input('>> ')
 		print(Style.RESET_ALL + "Oh Wait You can't")
 		print(cd + " Didn't work")
+
+class spawn:
+	def newgame():
+		print('This is the map of the current area.')
+		maps.heartcentral()
