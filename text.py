@@ -48,20 +48,27 @@ ____________________________________________________________________
 
 
 	def newgame():
-		print('What difficulity do you want? Easy (1), Medium (2), Hard (3), Realistic (4), Deadly (5), Psychically Immpossible (6)')
-		x = input('>> ')
-		if x == '1':
-			gamemode = 1
-		if x == '2':
-			gamemode = 2
-		if x == '3':
-			gamemode = 3
-		if x == '4':	
-			gamemode = 4	
-		if x == '5':
-			gamemode = 5
-		if x == '6':
-			gamemode = 6
+		print(Back.RED + 'ALERT MAJOR BUG - LISTEN TO THE INSTRUCTIONS THE GAME DOESNT CATCH EVERYTHING')
+		gamemodechoice = None
+		while not gamemodechoice:
+			print(Style.RESET_ALL + 'What difficulity do you want? Easy (1), Medium (2), Hard (3), Realistic (4), Deadly (5), Psychically Immpossible (6)')		
+			choice = input('>> ')
+			try:
+				global gamemode
+				gamemodechoice = int(choice)
+				gamemode = gamemodechoice
+			except ValueError:
+				print("Must be an integer 1 to 6")
 		print("What's your name?")
 		name = input('>> ')
-		print("What's your goal in life? Riches (1), Strength (2), Famousness (3), Power (4) as in goverment ")
+		goalchoice = None
+		while not goalchoice:
+			print("What's your goal in life? Riches (1), Strength (2), Famousness (3), Power (4) as in goverment, All of them (5), or something else (6)")
+			choice = input('>> ')
+			try:
+				global goal
+				goal = int(choice)
+				goalchoice = goal
+			except ValueError:
+				print("Must be an integer 1 to 6")
+		print('Is this good? Name:', name, '  Gamemode:', gamemode, '  Goal:', goal)
