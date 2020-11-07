@@ -5,6 +5,6 @@ config.init()
 functions.cutscenes.openingmenu()
 
 if config.newbie == True:
-	functions.cutscenes.newbie_adventure()
-elif config.newbie == False:
-	function.spawn.newgame()
+    functions.cutscenes.newbie_adventure()
+if config.newbie == False:
+    functions.spawn.newgame()

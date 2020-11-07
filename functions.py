@@ -26,6 +26,7 @@ ____________________________________________________________________
 			cutscenes.newgame()
 			return
 		if x == 'n':
+			config.newbie = False
 			print(Fore.WHITE + 'Very Nice, thanks for playing again, do you want to start a new game? (y/n)')
 			x = input(Fore.WHITE + '>> ')
 			if x == 'y':
