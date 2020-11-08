@@ -5,10 +5,12 @@ import saving
 import config
 import maps
 import cdline
-
+import pygame
 class cutscenes:
 	def openingmenu():
 		config.defaults()
+		config.screen.blit(config.logo, (100,3))
+		pygame.display.update()
 		print('''
 ██╗░░██╗███████╗░█████╗░██████╗░████████╗██╗░░░░░██╗███████╗███████╗
 ██║░░██║██╔════╝██╔══██╗██╔══██╗╚══██╔══╝██║░░░░░██║██╔════╝██╔════╝
@@ -30,6 +32,7 @@ ____________________________________________________________________
 			config.newbie = False
 			print(Fore.WHITE + 'Very Nice, thanks for playing again, do you want to start a new game? (y/n)')
 			x = input(Fore.WHITE + '>> ')
+			print('____________________________________________________________________')
 			if x == 'y':
 				cutscenes.newgame()
 				return
@@ -41,6 +44,7 @@ ____________________________________________________________________
 
 # Explain The Game
 	def explain():
+		print('____________________________________________________________________')
 		print('This game is about anything you want, You can be a Scientist, An Astronaut, (Well Maybe Not). But you get the point!')
 		print('The point of the this game is to make a fantasy world that feels real, using text, and graphics.')
 		time.sleep(5)
@@ -59,7 +63,6 @@ ____________________________________________________________________
 
 
 	def newgame():
-		print(Back.RED + 'ALERT MAJOR BUG - LISTEN TO THE INSTRUCTIONS THE GAME DOESNT CATCH EVERYTHING')
 		gamemodechoice = None
 		while not gamemodechoice:
 			print(Style.RESET_ALL + 'What difficulity do you want? Easy (1), Medium (2), Hard (3), Realistic (4), Deadly (5), Psychically Immpossible (6)')		

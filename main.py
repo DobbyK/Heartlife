@@ -1,8 +1,10 @@
 import functions
 import config
 import cdline
+import pygame
 from replit import db
 
+pygame.init()
 
 functions.cutscenes.openingmenu()
 
@@ -15,3 +17,8 @@ while config.free == True:
 	chc = input('>> ')
 	db["cd"] = chc
 	cdline.command()
+
+while config.working == True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            config.working = False

@@ -45,4 +45,6 @@ def stand():
 def help():
 	print('What do you need help with? 1. Commands 2. Story 3. Goal 4. I am bored')
 	help = input('>> ')
-	if help = ''
+	if help == '1':
+		return
+	return
