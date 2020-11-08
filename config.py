@@ -1,6 +1,7 @@
 from replit import db
 
 def defaults():
+	global status
 	global cd
 	global free
 	global newbie
@@ -16,4 +17,5 @@ def defaults():
 	goal = None
 	locatation = 'Heart Central'
 	free = False
+	status = 'Standing'
 

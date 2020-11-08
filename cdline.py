@@ -8,9 +8,17 @@ def command():
 	elif val == 'm':
 		cds.map()
 		return
+	elif val == 'lm':
+		cds.map()
+		cds.look()
+		return
 	elif val == 'sit':
 		cds.sit()
 		return
+	elif val == 'stand':
+		cds.stand()
+	elif val == 'help':
+		cds.help()
 	else:
 		print('Error, Invalid Command!')
 		return

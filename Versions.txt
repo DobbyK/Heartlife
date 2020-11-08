@@ -32,3 +32,5 @@ Version 0.01.6.1 Alpha keeps the commandline go forever!!!!!!! (Not Committed)
 Version 0.01.6.2 Alpha Bug Fix - No more errors on commandline not knowing what command was typed. Using Repl.it Database, Will change later.
 
 Version 0.01.6.2.1 Alpha Test Adding More Commands.
+
+Version 0.01.7 Alpha - "Command Line Fix" - Early Afternoon 8-11-2020 - Finished all bugs on Commandline, Able to put new commands in really quickly. Map hasn't changed.

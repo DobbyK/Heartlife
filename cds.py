@@ -18,6 +18,31 @@ def map():
 		print('Error')
 
 def sit():
-	print('You sit down.')
-	print('Nothing Much Happens.')
-	return
+	if config.status == 'Standing':
+		print('You sit down.')
+		print('Nothing Much Happens.')
+		config.status = 'Sitting'
+		return
+	elif config.status == 'Sitting':
+		print('You are already sitting!')
+		return
+	else:
+		print('Error')
+
+def stand():
+	if config.status == 'Sitting':
+		print('You stand up')
+		print('Nothing Much Happens')
+		config.status = 'Standing'
+		return
+	elif config.status == 'Standing':
+		print('You are already standing')
+		return
+	else:
+		print('Error')
+		return
+
+def help():
+	print('What do you need help with? 1. Commands 2. Story 3. Goal 4. I am bored')
+	help = input('>> ')
+	if help = ''
