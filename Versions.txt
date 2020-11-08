@@ -34,3 +34,5 @@ Version 0.01.6.2 Alpha Bug Fix - No more errors on commandline not knowing what 
 Version 0.01.6.2.1 Alpha Test Adding More Commands.
 
 Version 0.01.7 Alpha - "Command Line Fix" - Early Afternoon 8-11-2020 - Finished all bugs on Commandline, Able to put new commands in really quickly. Map hasn't changed.
+
+Version 0.01.7.1 Alpha - "Transfer to Pygame" - Afternoon 8-11-2020 - Transfered to Pygame to get ready to add graphics! 
