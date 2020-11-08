@@ -1,11 +1,17 @@
 import functions
 import config
-config.init()
+import cdline
+from replit import db
+
 
 functions.cutscenes.openingmenu()
 
 if config.newbie == True:
-    functions.cutscenes.newbie_adventure()
-
+  functions.cutscenes.newbie_adventure()
 elif config.newbie == False:
-    functions.spawn.newgame()
+  functions.spawn.newgame()
+		
+while config.free == True:
+	chc = input('>> ')
+	db["cd"] = chc
+	cdline.command()

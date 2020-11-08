@@ -26,3 +26,7 @@ Version 0.01.5 Alpha - "Command Line" - Late Afternoon 7-11-2020 - Fixed More Fo
 8-11-2020
 
 Version 0.01.6 Alpha - "Loacation, Loacation!" - Late Morning 8-11-2020 - Added the look command, Continued the Newbie Adventure, Named some areas on Map Last Night (0.01.5.1). Minor Bug Fixes on Speed. 
+
+Version 0.01.6.1 Alpha keeps the commandline go forever!!!!!!! (Not Committed)
+
+Version 0.01.6.2 Alpha Bug Fix - No more errors on commandline not knowing what command was typed. Using Repl.it Database, Will change later.

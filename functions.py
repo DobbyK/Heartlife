@@ -6,10 +6,9 @@ import config
 import maps
 import cdline
 
-config.init()
-
 class cutscenes:
 	def openingmenu():
+		config.defaults()
 		print('''
 ██╗░░██╗███████╗░█████╗░██████╗░████████╗██╗░░░░░██╗███████╗███████╗
 ██║░░██║██╔════╝██╔══██╗██╔══██╗╚══██╔══╝██║░░░░░██║██╔════╝██╔════╝
@@ -87,6 +86,7 @@ ____________________________________________________________________
 			except:
 				print("Must be an Integer 1 to 6")
 		print('Is this good? Name:', config.name, '  Gamemode:', config.gamemode, '  Goal:', config.goal)
+		return
 	def newbie_adventure():
 		print('Welcome to Heartlook,', config.name ,'! This is a massive world!')
 		time.sleep(2)
@@ -113,7 +113,11 @@ ____________________________________________________________________
 
 class spawn:
 	def newgame():
-		config.locatation = 'Heart Central'
-		print('This is the map of the current area:', + config.locatation)
-		maps.heartcentral()
+		print('This is the map of the current area:' + config.locatation)
+		maps.heartcentralmap()
+		config.free = True
+		return
+	
+	
+
 		

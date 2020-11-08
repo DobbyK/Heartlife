@@ -1,12 +1,15 @@
 import cds
-cd = None
-
+from replit import db
 def command():
-	global cd
-	cd = None
-	while not cd:
-		cd = input('>> ')
-	if cd == 'l' or 'look':
+	val = db["cd"]
+	print(val)
+	if val == 'l':
 		cds.look()
+		return
+	elif val == 'm':
+		cds.map()
+		return
+	else:
+		print('Error, Invalid Command!')
 		return
 	
