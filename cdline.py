@@ -1,6 +1,12 @@
-import config
-def commands():
+import cds
+cd = None
+
+def command():
+	global cd
+	cd = None
 	while not cd:
-		cdc = input('>> ')
-	if config.settings.mirror == True:
-		print(cdc)
+		cd = input('>> ')
+	if cd == 'l' or 'look':
+		cds.look()
+		return
+	

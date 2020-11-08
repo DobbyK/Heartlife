@@ -5,6 +5,7 @@ import saving
 import config
 import maps
 import cdline
+
 config.init()
 
 class cutscenes:
@@ -106,6 +107,9 @@ ____________________________________________________________________
 		cd = input('>> ')
 		print(Style.RESET_ALL + "Oh Wait You can't")
 		print(cd + " Didn't work")
+		print('Oh Well')
+		print('Try LOOKing around')
+		cdline.command()
 
 class spawn:
 	def newgame():

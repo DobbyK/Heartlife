@@ -22,3 +22,7 @@ Version 0.01.4 Alpha - "Newbie Adventure" - Afternoon 7-11-2020 - Fixed Formatin
 Version 0.01.4.1 Alpha Map Testing
 
 Version 0.01.5 Alpha - "Command Line" - Late Afternoon 7-11-2020 - Fixed More Formating Errors, Made a Test Map, Added Ability to do Commands (At least When I add them) Final Update of the Day. Working on Map Tonight.
+
+8-11-2020
+
+Version 0.01.6 Alpha - "Loacation, Loacation!" - Late Morning 8-11-2020 - Added the look command, Continued the Newbie Adventure, Named some areas on Map Last Night (0.01.5.1). Minor Bug Fixes on Speed. 

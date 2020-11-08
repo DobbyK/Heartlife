@@ -1,6 +1,8 @@
 def init():
-	global cd 
+	import cdline
+	import maps
 	global newbie
+	global locatation
 	global name 
 	global gamemode
 	global goal
@@ -9,8 +11,6 @@ def init():
 	name = None
 	gamemode = None
 	goal = None
-	locatation = None
-	cd = None
-def settings():
-	global mirror
-	mirror = True
+	locatation = 'Heart Central'
+	cdline.cd = None
+
