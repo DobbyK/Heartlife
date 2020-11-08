@@ -16,3 +16,8 @@ def map():
 		return
 	else:
 		print('Error')
+
+def sit():
+	print('You sit down.')
+	print('Nothing Much Happens.')
+	return

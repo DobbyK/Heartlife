@@ -30,3 +30,5 @@ Version 0.01.6 Alpha - "Loacation, Loacation!" - Late Morning 8-11-2020 - Added 
 Version 0.01.6.1 Alpha keeps the commandline go forever!!!!!!! (Not Committed)
 
 Version 0.01.6.2 Alpha Bug Fix - No more errors on commandline not knowing what command was typed. Using Repl.it Database, Will change later.
+
+Version 0.01.6.2.1 Alpha Test Adding More Commands.
