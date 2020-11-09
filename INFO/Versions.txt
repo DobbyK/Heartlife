@@ -43,6 +43,4 @@ Version 0.01.8 Alpha - "Organized!" - Late Afternoon 8-11-2020 - Made Folders, F
 
 9-11-2020
 
-Version 0.01.9 Alpha- "Help Line Basics" - Early Morning 9-11-2020 - Added Help Line, And Help on Basic commands, Updated Map on paper, More Code Formatting Fixed
-
 Version 0.02.0 Alpha - "MOVEMENT!!!! (basic ;( )" - Late Morning 9-11-2020 - Added the ability to move (doesn't work TOO well), and you can finnally quit, lots of formating fixes, precise locaction stuff now, Game can now actually be started after working on battling (v0.03.0 probally), First Update to be released for bug testing.
