@@ -1,6 +1,7 @@
 import references.config
 import references.des
 import references.maps
+import references.lconfig
 def look():
 	print('Here is a description of the current area:')
 	if references.config.locatation == 'Heart Central':
@@ -94,6 +95,7 @@ class movement():
 				print('You are now in Tree of Heartlook')
 				references.config.precise_location == 'Tree of Heartlook'
 				return
+			#if references.config.precise_location == 'Tree of Heartlook'
 			else:
 				print('Error')
 				return
