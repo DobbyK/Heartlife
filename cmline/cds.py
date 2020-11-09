@@ -43,8 +43,29 @@ def stand():
 		return
 
 def help():
-	print('What do you need help with? 1. Commands 2. Story 3. Goal 4. I am bored')
-	help = input('>> ')
-	if help == '1':
-		return
-	return
+	try:
+		print('What do you need help with? 1. Commands 2. Story 3. Goal 4. I am bored')
+		help = input('>> ')
+		help = int(help)
+	except:
+		print('Error Please enter a interger.')
+		help()
+	if help == 1:
+		print('List all commands (1) or Search (2)?')
+		help2 = input('>> ')
+		help2 = int(help2)
+		if help2 == 1:
+			print('''
+l - gives a description of current area
+m - shows map of current area					
+			''')
+			return
+		elif help2 == 2:
+			print('''
+test
+			''')
+			return
+	# elif help == 2:
+		# search = input('>>')
+	else:
+		print('Please enter a interger 1 - 3')
