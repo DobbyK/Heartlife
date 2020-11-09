@@ -42,3 +42,6 @@ Version 0.01.7.2 Alpha - "Figured Out Images!" - Afternoon 8-11-2020 - Figured O
 Version 0.01.8 Alpha - "Organized!" - Late Afternoon 8-11-2020 - Made Folders, Fixed Little Bugs: Better Testing on Inputs, Crashing on sit, and standing weirdly (Credit to my friend for finding the bug), And With the folders fixed the pathing. Final Update of the Day.
 
 Version 0.01.9 Alpha- "Help Line Basics" - Early Morning 9-11-2020 - Added Help Line, And Help on Basic commands, Updated Map on paper, More Code Formatting Fixed
+9-11-2020
+
+Version 0.02.0 Alpha - "MOVEMENT!!!! (basic ;( )" - Late Morning 9-11-2020 - Added the ability to move (doesn't work TOO well)

@@ -69,3 +69,69 @@ test
 		# search = input('>>')
 	else:
 		print('Please enter a interger 1 - 3')
+
+class movement():
+	def north():
+		if references.config.north == True:
+			print('You move north')
+			if references.config.precise_location == 'Central Heartlook':
+				print('You are now in Heartlook Goverement Plasa')
+				references.config.precise_location == 'Heartlook Goverement Plasa'
+				return
+			else:
+				print('Error')
+				return
+		elif references.config.north == False:
+			print('There is no path north you can see')
+			return
+		else:
+			print('Error')
+			return
+	def south():
+		if references.config.south == True:
+			print('You move south')
+			if references.config.precise_location == 'Central Heartlook':
+				print('You are now in Tree of Heartlook')
+				references.config.precise_location == 'Tree of Heartlook'
+				return
+			else:
+				print('Error')
+				return
+		elif references.config.north == False:
+			print('There is no path south you can see')
+			return
+		else:
+			print('Error')
+			return
+	def east():
+		if references.config.east == True:
+			print('You move east')
+			if references.config.precise_location == 'Central Heartlook':
+				print('You are now in Heartlook Hotel Outside')
+				references.config.precise_location == 'Heartlook Hotel Outside'
+				return
+			else:
+				print('Error')
+				return
+		elif references.config.east == False:
+			print('There is no path east you can see')
+			return
+		else:
+			print('Error')
+			return
+	def west():
+		if references.config.west == True:
+			print('You move west')
+			if references.config.precise_location == 'Central Heartlook':
+				print('You are now in Heartlook Shoping Center')
+				references.config.precise_location == 'Heartlook Shoping Center'
+				return
+			else:
+				print('Error')
+				return
+		elif references.config.north == False:
+			print('There is no path west you can see')
+			return
+		else:
+			print('Error')
+			return
