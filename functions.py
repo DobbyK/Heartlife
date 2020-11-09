@@ -1,10 +1,14 @@
+# Import Everything
 from colorama import Fore, Back, Style
 import time
 import saving
 import references.config
 import pygame
 import references.maps
+
+# Cutscenes (Opening, Guided Adventures, etc.)
 class cutscenes:
+	# Opening Menu
 	def openingmenu():
 		references.config.defaults()
 		references.config.screen.blit(references.config.logo, (200,125))
@@ -63,7 +67,7 @@ ____________________________________________________________________
 		print("Now since there is basically nothing else to explain! Let's Get into it!")
 		return
 
-
+	# New Game Scene (Name, Gamemode, Goal, etc)
 	def newgame():
 		gamemodechoice = None
 		while not gamemodechoice:
@@ -92,6 +96,7 @@ ____________________________________________________________________
 				print("Must be an Integer 1 to 6")
 		print('Is this good? Name:', references.config.name, '  Gamemode:', references.config.gamemode, '  Goal:', references.config.goal)
 		return
+	# Newbie Adventure - For New Players.
 	def newbie_adventure():
 		print('Welcome to Heartlook,', references.config.name ,'! This is a massive world!')
 		time.sleep(2)
@@ -117,7 +122,9 @@ ____________________________________________________________________
 		references.config.free = True
 		return
 
+# Spawning - Newgame, Death, Etc
 class spawn:
+	# Newgame Spawn - Heartlook
 	def newgame():
 		print('This is the map of the current area:' + references.config.locatation)
 		references.maps.heartcentralmap()
