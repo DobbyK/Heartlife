@@ -36,3 +36,7 @@ Version 0.01.6.2.1 Alpha Test Adding More Commands.
 Version 0.01.7 Alpha - "Command Line Fix" - Early Afternoon 8-11-2020 - Finished all bugs on Commandline, Able to put new commands in really quickly. Map hasn't changed.
 
 Version 0.01.7.1 Alpha - "Transfer to Pygame" - Afternoon 8-11-2020 - Transfered to Pygame to get ready to add graphics! 
+
+Version 0.01.7.2 Alpha - "Figured Out Images!" - Afternoon 8-11-2020 - Figured Out how to Images (I'm a Idiot I know), And I Uploaded A basic PNG to test. Not really an update just me learning.
+
+Version 0.01.8 Alpha - "Organized!" - Late Afternoon 8-11-2020 - Made Folders, Fixed Little Bugs: Better Testing on Inputs, Crashing on sit, and standing weirdly (Credit to my friend for finding the bug), And With the folders fixed the pathing. Final Update of the Day.

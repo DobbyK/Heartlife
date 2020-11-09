@@ -1,24 +1,24 @@
-import cds
+import cmline.cds
 from replit import db
 def command():
 	val = db["cd"]
 	if val == 'l':
-		cds.look()
+		cmline.cds.look()
 		return
 	elif val == 'm':
-		cds.map()
+		cmline.cds.map()
 		return
 	elif val == 'lm':
-		cds.map()
-		cds.look()
+		cmline.cds.map()
+		cmline.cds.look()
 		return
 	elif val == 'sit':
-		cds.sit()
+		cmline.cds.sit()
 		return
 	elif val == 'stand':
-		cds.stand()
+		cmline.cds.stand()
 	elif val == 'help':
-		cds.help()
+		cmline.cds.help()
 	else:
 		print('Error, Invalid Command!')
 		return

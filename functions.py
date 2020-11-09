@@ -1,15 +1,13 @@
-	# import config
 from colorama import Fore, Back, Style
 import time
 import saving
-import config
-import maps
-import cdline
+import references.config
 import pygame
+import references.maps
 class cutscenes:
 	def openingmenu():
-		config.defaults()
-		config.screen.blit(config.logo, (100,3))
+		references.config.defaults()
+		references.config.screen.blit(references.config.logo, (200,125))
 		pygame.display.update()
 		print('''
 ██╗░░██╗███████╗░█████╗░██████╗░████████╗██╗░░░░░██╗███████╗███████╗
@@ -23,17 +21,21 @@ ____________________________________________________________________
 		print('Is this your first time playing? (y/n)')
 		x = input(Fore.WHITE + '>> ')
 		if x == 'y':
-			config.newbie = True
+			references.config.newbie = True
 			print(Fore.WHITE + 'Ahh! Then we should explain the game to you!')
+			references.config.screen.fill(references.config.black)
+			pygame.display.update()
 			cutscenes.explain()
 			cutscenes.newgame()
 			return
 		if x == 'n':
-			config.newbie = False
+			references.config.newbie = False
 			print(Fore.WHITE + 'Very Nice, thanks for playing again, do you want to start a new game? (y/n)')
 			x = input(Fore.WHITE + '>> ')
 			print('____________________________________________________________________')
 			if x == 'y':
+				references.config.screen.fill(references.config.black)
+				pygame.display.update()
 				cutscenes.newgame()
 				return
 			if x == 'n':
@@ -70,28 +72,28 @@ ____________________________________________________________________
 			global gamemode
 			choice = int(choice)
 			if choice >= 1 and choice <= 6:
-				config.gamemode = choice
+				references.config.gamemode = choice
 				gamemodechoice = True
 			else:
 				print("Must be an Integer 1 to 6")
 
 		print("What's your name?")
-		config.name = input('>> ')
+		references.config.name = input('>> ')
 		goalchoice = None
 		
 		while not goalchoice:
 			print("What's your goal in life? Riches (1), Strength (2), Famousness (3), Power (4) as in goverment, All of them (5), or something else (6)")
 			choice = input('>> ')
 			try:
-				config.goal = int(choice)
-				if config.goal >= 1 and config.goal <= 6: 
+				references.config.goal = int(choice)
+				if references.config.goal >= 1 and references.config.goal <= 6: 
 					goalchoice = True
 			except:
 				print("Must be an Integer 1 to 6")
-		print('Is this good? Name:', config.name, '  Gamemode:', config.gamemode, '  Goal:', config.goal)
+		print('Is this good? Name:', references.config.name, '  Gamemode:', references.config.gamemode, '  Goal:', references.config.goal)
 		return
 	def newbie_adventure():
-		print('Welcome to Heartlook,', config.name ,'! This is a massive world!')
+		print('Welcome to Heartlook,', references.config.name ,'! This is a massive world!')
 		time.sleep(2)
 		print('Who am I? Oh! My Name is...')
 		time.sleep(1.5)
@@ -112,13 +114,14 @@ ____________________________________________________________________
 		print(cd + " Didn't work")
 		print('Oh Well')
 		print('Try LOOKing around')
-		cdline.command()
+		references.config.free = True
+		return
 
 class spawn:
 	def newgame():
-		print('This is the map of the current area:' + config.locatation)
-		maps.heartcentralmap()
-		config.free = True
+		print('This is the map of the current area:' + references.config.locatation)
+		references.maps.heartcentralmap()
+		references.config.free = True
 		return
 	
 	

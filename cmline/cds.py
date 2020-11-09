@@ -1,41 +1,41 @@
-import config
-import des
+import references.config
+import references.des
+import references.maps
 def look():
 	print('Here is a description of the current area:')
-	if config.locatation == 'Heart Central':
-		des.heartcentral()
+	if references.config.locatation == 'Heart Central':
+		references.des.heartcentral()
 		return
 	else:
 		print('Error')
 
 def map():
-	import maps
 	print('Here is a map of the current Area:')
-	if config.locatation == 'Heart Central':
-		maps.heartcentralmap()
+	if references.config.locatation == 'Heart Central':
+		references.maps.heartcentralmap()
 		return
 	else:
 		print('Error')
 
 def sit():
-	if config.status == 'Standing':
+	if references.config.status == 'Standing':
 		print('You sit down.')
 		print('Nothing Much Happens.')
-		config.status = 'Sitting'
+		references.config.status = 'Sitting'
 		return
-	elif config.status == 'Sitting':
+	elif references.config.status == 'Sitting':
 		print('You are already sitting!')
 		return
 	else:
 		print('Error')
 
 def stand():
-	if config.status == 'Sitting':
+	if references.config.status == 'Sitting':
 		print('You stand up')
 		print('Nothing Much Happens')
-		config.status = 'Standing'
+		references.config.status = 'Standing'
 		return
-	elif config.status == 'Standing':
+	elif references.config.status == 'Standing':
 		print('You are already standing')
 		return
 	else:
