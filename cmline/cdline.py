@@ -17,8 +17,10 @@ def command():
 		return
 	elif val == 'stand':
 		cmline.cds.stand()
+	
 	elif val == 'help':
 		cmline.cds.help()
+	
 	else:
 		print('Error, Invalid Command!')
 		return
