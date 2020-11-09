@@ -95,7 +95,7 @@ class movement():
 				print('You are now in Tree of Heartlook')
 				references.config.precise_location == 'Tree of Heartlook'
 				return
-			if references.config.precise_location == 'Tree of Heartlook'
+			#if references.config.precise_location == 'Tree of Heartlook'
 			else:
 				print('Error')
 				return
