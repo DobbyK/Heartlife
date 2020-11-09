@@ -92,10 +92,11 @@ class movement():
 		if references.config.south == True:
 			print('You move south')
 			if references.config.precise_location == 'Central Heartlook':
-				print('You are now in Tree of Heartlook')
+				print('You are now in Tree of Hearts')
 				references.config.precise_location == 'Tree of Heartlook'
+				references.lconfig.lc.heartlook.tree_of_hearts()
 				return
-			#if references.config.precise_location == 'Tree of Heartlook'
+			# if references.config.precise_location == 'Tree of Heartlook'
 			else:
 				print('Error')
 				return

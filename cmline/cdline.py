@@ -1,4 +1,5 @@
 import cmline.cds
+import references.config
 from replit import db
 def command():
 	val = db["cd"]
@@ -22,19 +23,42 @@ def command():
 		cmline.cds.help()
 		return
 	elif val == 'n':
-		cmline.cds.movement.north()
-		return
+		if references.config.north == True:
+			cmline.cds.movement.north()
+			return
+		elif references.config.north == False:
+			print("You can't seem to go that way!")
+			return
 	elif val == 's':
-		cmline.cds.movement.south()
-		return
+		if references.config.south == True:
+			cmline.cds.movement.south()
+			return
+		elif references.config.south == False:
+			print("You can't seem to go that way!")
+			return
 	elif val == 'e':
-		cmline.cds.movement.east()
-		return
+		if references.config.east == True:
+			cmline.cds.movement.east()
+			return
+		elif references.config.east == False:
+			print("You can't seem to go that way!")
+			return
 	elif val == 'w':
-		cmline.cds.movement.west()
-		return
+		if references.config.west == True:
+			cmline.cds.movement.west()
+			return
+		elif references.config.west == False:
+			print("You can't seem to go that way!")
+			return
 	elif val == 'q':
-		exit()
+		print('Are you sure you want to exit? (y/n)')
+		exitc = input('>> ')
+		if exitc == 'y':
+			print(';( Why?????')
+			exit()
+		else:
+			print('Thanks For Staying :)')
+			return
 	else:
 		print('Error, Invalid Command!')
 		return
