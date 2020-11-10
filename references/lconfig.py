@@ -1,14 +1,22 @@
-import config
+import references.config
 class lc:
 	class heartlook:
 		def heartlook_central():
-			config.north = True
-			config.south = True
-			config.east = True
-			config.west = True
-			config.nw = False
-			config.sw = False
-			config.ne = True
-			config.se = False
-	class heartlook_suburbs:
-		x = 5
+			references.config.north = True
+			references.config.south = True
+			references.config.east = True
+			references.config.west = True
+			references.config.nw = False
+			references.config.sw = False
+			references.config.ne = True
+			references.config.se = False
+		def tree_of_hearts():
+			references.config.north = True
+			references.config.south = False
+			references.config.east = True
+			references.config.west = True
+			references.config.nw = False
+			references.config.sw = False
+			references.config.ne = False
+			references.config.se = False
+	# class heartlook_suburbs:
