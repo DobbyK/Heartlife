@@ -30,6 +30,7 @@ def defaults():
 	global white
 	black = (0, 0, 0)
 	white = (255, 255, 255)
+	blue_black = (20, 12, 28)
 	working = True
 	db["cd"] = 'None'
 	newbie = None
@@ -39,7 +40,7 @@ def defaults():
 	locatation = 'Heart Central'
 	free = False
 	status = 'Standing'
-	logo = pygame.image.load('.//sprites//heartlife_logo.png')
+	logo = pygame.image.load('.//sprites/logo_art_2x.png')
 	north = True
 	south = True
 	east = True

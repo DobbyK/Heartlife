@@ -9,6 +9,8 @@ python = "^3.8"
 colorama = "^0.4.4"
 replit = "^2.0.0"
 pygame = "^2.0.0"
+sympy = "^1.6.2"
+simpy = "^4.0.1"
 
 [tool.poetry.dev-dependencies]
 

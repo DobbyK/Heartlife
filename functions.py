@@ -11,7 +11,7 @@ class cutscenes:
 	# Opening Menu
 	def openingmenu():
 		references.config.defaults()
-		references.config.screen.blit(references.config.logo, (200,125))
+		references.config.screen.blit(references.config.logo, (0,0))
 		pygame.display.update()
 		print('''
 ██╗░░██╗███████╗░█████╗░██████╗░████████╗██╗░░░░░██╗███████╗███████╗
