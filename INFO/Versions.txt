@@ -48,4 +48,8 @@ Version 0.01.9 Alpha- "Help Line Basics" - Early Morning 9-11-2020 - Added Help 
 
 Version 0.02.0 Alpha - "MOVEMENT!!!! (basic ;( )" - Late Morning 9-11-2020 - Added the ability to move (doesn't work TOO well)
 
-Version 0.02.0.1 Alpha - "Movement Patch" - Late Afternoon 9-11-2020 - Fixed Movementish, Got ready to be able to change where you can move, Working on Map still but has all main areas named on paper (Will Upload in v0.02.1). Last Update of the Day - Also @megaoy on Heartlife is now the Head Sprite Designer. @zen is now the Main Story Writer, and Assistant Programer. 
+Version 0.02.0.1 Alpha - "Movement Patch" - Late Afternoon 9-11-2020 - Fixed Movementish, Got ready to be able to change where you can move, Working on Map still but has all main areas named on paper (Will Upload in v0.02.1). Last Update of the Day - Also @megaoy on Heartlife is now the Head Sprite Designer. @nerdyzen is now the Main Story Writer, and Assistant Programer. 
+
+10-11-2020
+
+Note: Was Trying To Transfer To another IDE, but attempt failed, and found out it wasn't that great. The Free mode was HORRIBLE. And Money is a no go ;( Sorry About No Update, but @megaoy got a make do logo :) (Me when I realize only i am readying this lol)
