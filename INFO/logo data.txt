@@ -22,8 +22,8 @@ logo art.png
 	width : 320
 	height: 224
 
-logo art2x.png 
+logo_art_2x.png 
 
-	zoom size 2x
-	width : 640
-	height: 448
+	zoom size 2x ???
+	width : 600
+	height: 800

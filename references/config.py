@@ -40,7 +40,7 @@ def defaults():
 	locatation = 'Heart Central'
 	free = False
 	status = 'Standing'
-	logo = pygame.image.load('.//sprites//heartlife_logo_v2.png')
+	logo = pygame.image.load('.//sprites/logo_art_2x.png')
 	north = True
 	south = True
 	east = True
