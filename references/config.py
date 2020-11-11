@@ -1,4 +1,3 @@
-from replit import db
 import pygame
 
 def defaults():

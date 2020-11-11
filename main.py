@@ -3,7 +3,6 @@ import functions
 import references.config
 import cmline.cdline
 import pygame
-from replit import db
 
 # Default Settings
 pygame.init()
