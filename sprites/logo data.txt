@@ -1,0 +1,29 @@
+color pallet: vine flexibe linear ramp
+color count: 11
+
+colors:
+background: ff150a1f
+outline: fffffdf0
+
+base red: ffb42313
+yelow: fff4c047
+orange: fff4680b
+dark red/whine: ff681824
+deep pruble : ff291945
+
+green base: ff57c52b
+light green: ffb9ed5e
+dark green: ff118337
+dark blue: ff222d81
+
+logo art.png 
+
+	zoom size 1x
+	width : 320
+	height: 224
+
+logo art2x.png 
+
+	zoom size 2x
+	width : 640
+	height: 448
