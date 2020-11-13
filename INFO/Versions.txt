@@ -57,3 +57,7 @@ Note: Was Trying To Transfer To another IDE, but attempt failed, and found out i
 11-11-2020
 
 Version 0.02.2 Alpha - "Logo!" - Early Morning 11-11-2020 - Resized logo by @megaoy, and made it show on the opening screen. logo_data.txt stores info on it. One Larger one for the game one smaller for back up I guess. Config now as the larger one as the logo variable. 
+
+11-12-2020
+
+Version 0.02.3 Alpha - "BATTLE!" - Afternoon 11-12-2020 - Made a basic battling system with stats but i have not implemented very well yet. Alot of Formating. Offically Going to start using Pyterm, a new custom linux terminal by me and zen. Thank You. Sorry Haven't been doing as much updates recently have been working on Pyterm. This still is my main project rn.
