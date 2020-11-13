@@ -5,6 +5,8 @@ import saving
 import references.config
 import pygame
 import references.maps
+import battle
+import references.battle_ref
 
 # Cutscenes (Opening, Guided Adventures, etc.)
 class cutscenes:
@@ -118,8 +120,17 @@ ____________________________________________________________________
 		print(Style.RESET_ALL + "Oh Wait You can't")
 		print(cd + " Didn't work")
 		print('Oh Well')
-		print('Try LOOKing around')
-		references.config.free = True
+		print('Try well... I will take you there myself')
+		references.config.locatation = "Heartlook Suburbs"
+		references.config.precise_location = "Heartlook Fields"
+		time.sleep(2)
+		print('I will teach you how to battle!')
+		time.sleep(1.5)
+		print('The Question is who...')
+		time.sleep(1)
+		print('OH! I have an idea')
+		print('Me...')
+		battle.battle(references.battle_ref.fighting.jarzo())
 		return
 
 # Spawning - Newgame, Death, Etc

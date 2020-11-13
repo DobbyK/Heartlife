@@ -1,7 +1,7 @@
-from replit import db
 import pygame
 
 def defaults():
+	global blue_black
 	global precise_location
 	global north
 	global south
@@ -19,7 +19,7 @@ def defaults():
 	global logo
 	global working
 	global status
-	global cd
+	global cdc
 	global free
 	global newbie
 	global locatation
@@ -32,7 +32,7 @@ def defaults():
 	white = (255, 255, 255)
 	blue_black = (20, 12, 28)
 	working = True
-	db["cd"] = 'None'
+	cdc = None
 	newbie = None
 	name = None
 	gamemode = None
