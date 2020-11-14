@@ -1,0 +1,4 @@
+sprite size: 64x64px
+zoom_size: 1x
+pallet: vine flixibe linear ramp
+style: stardew valley
