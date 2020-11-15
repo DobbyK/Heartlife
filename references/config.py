@@ -51,5 +51,8 @@ def defaults():
 	se = False
 	precise_location = 'Central Heartlook'
 
-
-
+class stats:
+	def __init__():
+		x = 5
+	def stat_track():
+		dfe = 50
