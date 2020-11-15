@@ -138,7 +138,7 @@ class spawn:
 	# Newgame Spawn - Heartlook
 	def newgame():
 		print('This is the map of the current area:' + references.config.locatation)
-		references.maps.heartcentralmap()
+		references.maps.heartlook()
 		references.config.free = True
 		return
 	

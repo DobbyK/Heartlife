@@ -13,7 +13,7 @@ def look():
 def map():
 	print('Here is a map of the current Area:')
 	if references.config.locatation == 'Heart Central':
-		references.maps.heartcentralmap()
+		references.maps.heartlook()
 		return
 	else:
 		print('Error')

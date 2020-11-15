@@ -1,4 +1,4 @@
-import config
+import references.config
 class fighting:
 	class enemys:
 		def __init__(self, hp, atk, battle, spc, wis, char, moves):
@@ -21,26 +21,28 @@ class fighting:
 			dmg = 5
 			return dmg
 		def ptc_calc():
-			if config.stats.stat_track.ptc == 1:
-				config.stats.battle = config.stats.battle * 1.1
-			if config.stats.stat_track.ptc == 2:
-				config.stats.battle = config.stats.battle * 1.2
-			if config.stats.stat_track.ptc == 3:
-				config.stats.battle = config.stats.battle * 1.3
-			if config.stats.stat_track.ptc == 4:
-				config.stats.battle = config.stats.battle * 1.4
-			if config.stats.stat_track.ptc == 5:
-				config.stats.battle = config.stats.battle * 1.5
-			if config.stats.stat_track.ptc == 6:
-				config.stats.battle = config.stats.battle * 1.6
-			if config.stats.stat_track.ptc == 7:
-				config.stats.battle = config.stats.battle * 1.1
-			if config.stats.stat_track.ptc == 8:
-				config.stats.battle = config.stats.battle * 1.1
-			if config.stats.stat_track.ptc == 9:
-				config.stats.battle = config.stats.battle * 1.1
-			if config.stats.stat_track.ptc == 10:
-				config.stats.battle = config.stats.battle * 1.1
+			if references.config.stats.stat_track.ptc == 1:
+				references.config.stats.battle.dfe = references.config.stats.dfe * 1.1
+			elif references.config.stats.stat_track.ptc == 2:
+				references.config.stats.battle.dfe = references.config.stats.dfe * 1.2
+			elif references.config.stats.stat_track.ptc == 3:
+				references.config.stats.battle.dfe = references.config.stats.dfe * 1.3
+			elif references.config.stats.stat_track.ptc == 4:
+				references.config.stats.battle.dfe = references.config.stats.dfe * 1.4
+			elif references.config.stats.stat_track.ptc == 5:
+				references.config.stats.battle.dfe = references.config.stats.dfe * 1.5
+			elif references.config.stats.stat_track.ptc == 6:
+				references.config.stats.battle.dfe = references.config.stats.dfe * 1.6
+			elif references.config.stats.stat_track.ptc == 7:
+				references.config.stats.battle.dfe = references.config.stats.dfe * 1.7
+			elif references.config.stats.stat_track.ptc == 8:
+				references.config.stats.battle.dfe = references.config.stats.dfe * 1.8
+			elif references.config.stats.stat_track.ptc == 9:
+				references.config.stats.battle.dfe = references.config.stats.dfe * 1.9
+			elif references.config.stats.stat_track.ptc == 10:
+				references.config.stats.battle.dfe = references.config.stats.dfe * 2
+			else:
+				print('Error dfe stat not found!')
 		
 			
 			
