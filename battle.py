@@ -20,5 +20,18 @@ BATTLE!
 		elif chc == 2:
 			print('Protecting Your Self')
 			references.battle_ref.calc.ptc_calc()
+		elif chc == 3:
+			print('What do you want to say?')
+			say = input('>> ')
+			references.text.battle(say)
+		elif chc == 4:
+			print(references.self())
+		elif chc == 5:
+			references.battle_ref.run()
+		elif chc == 6:
+			references.help('battle')
+		else:
+			print('Error with Choice')
+
 	
 		
